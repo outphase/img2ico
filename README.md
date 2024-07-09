@@ -1,4 +1,4 @@
-# || img2ico ||
+# img2ico
 
 Welcome to img2ico, a windows icon making utility. 
 
@@ -13,3 +13,10 @@ img2ico <image name>.png
 
 This will create a .ico file in the same directory with the same name as the
 source file.
+
+## Usage as a library in your Rust application
+
+Add the following line to your `cargo.toml` file
+```
+img2ico = { git = "https://github.com/outphase/img2ico"}
+```
