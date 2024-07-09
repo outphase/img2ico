@@ -6,7 +6,7 @@ fn main() {
         eprintln!(" Please provide a .png image\n  -> png2ico <image name>.png");
         process::exit(1);
     });
-    if let Err(e) = img2ico::convert_image(image_name) {
+    if let Err(e) = img2ico::convert_image(image_name.into()) {
         eprintln!("{e}")
     }
 }
